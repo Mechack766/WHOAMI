@@ -89,7 +89,6 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
-  width: 20px;
   padding: 100px 20px;
   text-align: center;
 }
@@ -176,11 +175,23 @@ nav a:hover {
 
 .cta {
   background: #202a3c;
-  padding: 40px;
+  padding-left: 40px;
   text-align: center;
-  margin: 50px 10%;
-  border-radius: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: -10px;
+  border-radius: 5px;
+  border-bottom-color: hsl(216, 53%, 9%);
 }
+
+.cta h2 {
+  padding: 2rem 0 1rem 0;
+}
+
+.cta p {
+    color: #c7c7c7;
+    margin-bottom: 20px;
+  }
 
 .cta input {
   padding: 10px;
@@ -205,6 +216,11 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+
+footer .location {
+  margin-left: -30px;
+  margin-bottom: -20px;
 }
 
 footer ul {
@@ -251,5 +267,9 @@ footer a:hover {
 @media (min-width: 1400) {
   .productive img {
     max-width: 500px;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 }
